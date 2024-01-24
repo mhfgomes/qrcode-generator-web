@@ -24,3 +24,5 @@ app.get('/generate', function(req,res) {
 app.listen(3000, () => { 
 	console.log("ready");
 });
+
+module.exports = app;

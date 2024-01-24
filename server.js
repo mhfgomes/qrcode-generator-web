@@ -15,8 +15,16 @@ app.get('/', function(req,res) {
 });
 
 app.get('/generate', function(req,res) {
+	if(req.query['qrcontent'].replace(new RegExp(' ', 'g'), '') == '') {
+		res.redirect('/');
+		return;
+	}
+
 	qr_code.toDataURL(req.query['qrcontent'], function(err, url) {
-		console.log(url);
+		if(err) {
+			res.redirect('/');
+			return;
+		}
 		res.render('generate', {qrcontent: url});
 	});
 });

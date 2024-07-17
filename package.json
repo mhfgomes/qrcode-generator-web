@@ -1,18 +1,22 @@
 {
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "qrcode": "^1.5.3"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
   "name": "qrcode-generator-web",
-  "version": "1.0.0",
-  "main": "server.js",
-  "devDependencies": {},
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18"
+  }
 }

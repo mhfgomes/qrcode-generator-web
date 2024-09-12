@@ -29,6 +29,15 @@ app.get('/generate', function(req,res) {
 	});
 });
 
+app.get('/desktop', function(req, res) {
+	res.render('desktop');
+});
+
+app.get('*', function(req, res) {
+	console.log("404 not found");
+	res.redirect("/");
+});
+
 app.listen(3000, () => { 
 	console.log("ready");
 });

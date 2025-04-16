@@ -61,7 +61,7 @@ app.get('/desktop', function(req, res) {
 
 /// WIP API support
 
-app.get('*', function(req, res) {
+app.get('/*splat', function(req, res) {
 	res.render('404');
 });
 

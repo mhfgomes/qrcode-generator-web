@@ -11,7 +11,6 @@ Este projeto é uma aplicação web que permite aos usuários gerar QR Codes de 
 - 🎯 Geração instantânea de QR Codes
 - 💾 Download do QR Code gerado em formato JPEG
 - 📱 Interface responsiva e amigável
-- 🚀 Deploy pronto para Vercel
 - 🎨 Interface moderna com design clean
 
 ## 🛠️ Tecnologias Utilizadas
@@ -24,8 +23,7 @@ Este projeto é uma aplicação web que permite aos usuários gerar QR Codes de 
 
 ## 📋 Pré-requisitos
 
-- Node.js (versão 12 ou superior)
-- npm ou yarn
+- [Bun](https://bun.sh) - Runtime JavaScript moderno e rápido
 
 ## 🚀 Instalação
 
@@ -41,14 +39,14 @@ cd qrcode-generator-web
 
 3. Instale as dependências:
 ```bash
-npm install
+bun install
 ```
 
 ## 💻 Como Usar
 
 1. Inicie o servidor:
 ```bash
-npm start
+bun start
 ```
 
 2. Acesse a aplicação em seu navegador:
@@ -75,22 +73,7 @@ qrcode-generator-web/
 │   ├── desktop.ejs   # Página sobre app desktop
 │   └── 404.ejs       # Página de erro 404
 ├── server.js         # Arquivo principal do servidor
-├── package.json      # Dependências do projeto
-└── vercel.json       # Configuração de deploy Vercel
-```
-
-## 🌐 Deploy
-
-Este projeto está configurado para deploy no Vercel. Para fazer o deploy:
-
-1. Instale a CLI do Vercel:
-```bash
-npm install -g vercel
-```
-
-2. Execute o comando de deploy:
-```bash
-vercel
+└── package.json      # Dependências do projeto
 ```
 
 ## 📄 Licença
